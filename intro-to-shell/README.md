@@ -125,6 +125,27 @@ cp /home/asela/Downloads/tolstoy.txt ./ # command refers to the current director
 
 
 
+## Bash Scripting
+
+```
+which bash #find out where is your bash interpreter
+touch myscript.sh #create an empty script file
+vim myscript.sh #open the script file using vim
+
+#insert the following text and save the file as myscript.sh
+#!/bin/bash
+{insert script}
+
+chmod +x myscript.sh #make the file executable
+./myscript.sh #execute the file
+
+curl wttr.in #weather forecast in your terminal!
+
+```
+
+
+
+
 *references*
 
 1. Evolution of shells in Linux https://www.ibm.com/developerworks/linux/library/l-linux-shells/index.html
