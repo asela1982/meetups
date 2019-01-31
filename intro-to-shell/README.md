@@ -76,8 +76,23 @@ mv pg2600-0.txt mytext.txt #rename the file
 
 ##### Editing files
 
+Vim is a powerful text editor; it has a steep learning curve
 
+![](images/vimodes.jpg)
 
+Command-line mode
+```
+q [Enter]If you haven't made any modifications, or have already saved them beforehand.
+quit [Enter]If you haven't made any modifications, or have already saved them beforehand.
+q! [Enter]ignore any modifications and quit.
+w [Enter]Save and return to Command mode.
+wq [Enter]Save and quit.
+x [Enter]Save and quit, same as wq 
+```
+
+**Test your understanding**
+
+Extract the text file 2600-0.txt using wget;open the file, change the content "WAR AND PEACE" to "Title: WAR AND PEACE", save and quit using the VIM text editor.
 
 
 ## Perform basic data manipulation tasks such as combining and copying files
@@ -114,3 +129,5 @@ cp /home/asela/Downloads/tolstoy.txt ./ # command refers to the current director
 1. Evolution of shells in Linux https://www.ibm.com/developerworks/linux/library/l-linux-shells/index.html
 2. Bash reference manual https://www.gnu.org/software/bash/manual/bash.html#What-is-Bash_003f
 3. Introduction to the Bash Command line https://programminghistorian.org/en/lessons/intro-to-bash
+4. The vi editor (Visual editor) - A quick reference guide
+https://ss64.com/vi.html
