@@ -128,6 +128,7 @@ cp /home/asela/Downloads/tolstoy.txt ./ # command refers to the current director
 ## Bash Scripting
 
 ```
+cat /etc/shells # see what shells you have installed
 which bash #find out where is your bash interpreter
 touch myscript.sh #create an empty script file
 vim myscript.sh #open the script file using vim
