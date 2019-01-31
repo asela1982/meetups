@@ -13,7 +13,8 @@ Shell is both a command interpreter and a programming language
 ```
 $ convert D:/DCIM/Camera/IMAGE10001.jpg -resize 1024x768 C:/Users/TorrentPrincess/Pictures
 ```
-So you open up photoshop, go File->Open..., navigate to where your image is (double click My Computer, Disk D:, DCIM, Camera, find image file and double click it), then you go Image->resize, ecter 1024 and 768, then OK, then File->Save as..., select destination, click OK, then close Photoshop.
+    
+>So you open up photoshop, go File->Open..., navigate to where your image is (double click My Computer, Disk D:, DCIM, Camera, find image file and double click it), then you go Image->resize, ecter 1024 and 768, then OK, then File->Save as..., select destination, click OK, then close Photoshop.
 
 - It supports automation of repeated tasks(example: looping over a set of images in order to resize them to be uploaded to a social media site)
 - Helps in becoming an efficient programmer
