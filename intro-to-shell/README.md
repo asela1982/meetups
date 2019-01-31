@@ -1,6 +1,27 @@
 # Introduction to the Bash Command line
 
 ## Introduction
+
+**Evolution of Shells**
+
+- Shell is both a command interpreter and a programming language
+- Ken Thompson (of Bell Labs) developed the first shell for UNIX called the V6 shell in 1971. 
+- What the Thompson shell lacked was the ability to script. 
+- Its sole purpose was as an interactive shell (command interpreter) to invoke commands and view results
+- The Bourne shell(./bin/sh) was created by Stephen Bourne in 1977 at AT&T Bell Labs for V7 UNIX
+- The Bourne shell had two primary goals: 
+    * serve as a command interpreter to interactively execute commands for the operating system
+    * scripting (writing reusable scripts that could be invoked through the shell)
+- The Bourne shell was anchor for numerous derivate shells(Ksh,Csh,Bash)-Refer image below.
+- Bash is a superset of the Bourne shell
+- Bash is the default shell for the GNU operating system. 
+- It currently runs on nearly every version of Unix and a few other operating systems - independently-supported ports exist for MS-DOS, OS/2, and Windows platforms.
+
+figure1: lineage of shells
+![](images/lineageofShells.png)
+
+
+
 ## Navigating through your file system
 
 ```
@@ -38,7 +59,6 @@ mv pg2600-0.txt mytext.txt #rename the file
 
 ##### Editing files
 
-
 ## Perform basic data manipulation tasks such as combining and copying files
 
 ##### Combining files
@@ -46,28 +66,29 @@ mv pg2600-0.txt mytext.txt #rename the file
 ```
 cp pg2600-0.txt tolstoy.txt #duplicate a file
 cp tolstoy.txt tolstoy2.txt #to combine
-cat tolstoy.txt tolstoy2.txt #to combine two or more files but prints the output within the shell
+cat tolstoy.txt tolstoy2.txt #to combine files but prints the output within the shell
 cat tolstoy.txt tolstoy2.txt > tolstoy-twice.txt #send the output to a newfile
 cat *.txt > everything-together.txt #combining more than two files
 ```
 
 ##### Coping and Moving files
 
-basic format of the copy command: cp [source] [destination]
+basic format of the copy command: cp [source] [destination]  
 if you dont want to leave a copy behind, replace cp with mv
+
 
 ```
 cp tolstoy.txt tolstoy-backup.txt #create a backup
 cp /home/asela/Documents/tolstoy.txt /home/asela/Downloads/ #move a file
-cp /home/asela/Documements/*.txt /home/asela/Downloads/
-#move several files at once
-cp /home/asela/Downloads/tolstoy.txt ./
-# ./ command refers to the current directory you are in
+cp /home/asela/Documements/*.txt /home/asela/Downloads/ #move several files at once
+cp /home/asela/Downloads/tolstoy.txt ./ # command refers to the current directory you are in
 ```
-
 
 ##### Deleting files
 
 
 
 
+*references*
+
+https://www.ibm.com/developerworks/linux/library/l-linux-shells/index.html
