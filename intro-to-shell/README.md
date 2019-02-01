@@ -123,7 +123,18 @@ cp /home/asela/Downloads/tolstoy.txt ./ # command refers to the current director
 
 ##### Deleting files
 
+Basic formats of remove command: rm {file-name}
+                                 rm [options] {file-name}
+                                 rm -f {file-name} # -f is used to remove the file forcefully
+```
+rm /d/thushara/workspace/tolstoy.txt # remove a file
+rm -i /d/thushara/workspace/tolstoy.txt # remove a file with a yes/no prompt: where i stands for inquire
+rm /d/thushara/workspace/tolstoy-001.txt /d/thushara/workspace/tolstoy-002.txt /d/thushara/workspace/tolstoy-003.txt # remove multiple files at one time
+rm /d/thushara/workspace/*.txt # remove all text (.txt) files in the current directory
+rm -rf /d/thushara/workspace/xyz # remove all files and subdirectories from a directory
+rmdir /d/thushara/workspace/xyz # remove an empty directory 
 
+```                                
 
 ## Bash Scripting
 
