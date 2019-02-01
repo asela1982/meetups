@@ -1,10 +1,11 @@
 # Introduction to the Bash Command line
 
-## Introduction
+
+## <span style="color:blue">Section 1</span>: Introduction
 Shell is both a command interpreter and a programming language
 
 
-**Why use Shell?**
+<span style="color:green">**Why use Shell?**</span> 
 
 - To utilize Git Version Control
 - Use of Package management tools to install packages(APT for Ubuntu, PIP for Python, NPM for Javascript): Package is just resusable piece of software
@@ -21,7 +22,7 @@ $ convert D:/DCIM/Camera/IMAGE10001.jpg -resize 1024x768 C:/Users/TorrentPrinces
 - Eventually it will become fun!
 
 
-**Evolution of Shells**
+<span style="color:green">**Evolution of Shells**</span>
 
 - Ken Thompson (of Bell Labs) developed the first shell for UNIX called the V6 shell in 1971. 
 - What the Thompson shell lacked was the ability to script. 
@@ -40,7 +41,7 @@ figure1: lineage of shells
 
 
 
-## Navigating through your file system
+## <span style="color:blue">Section 2</span>: Navigating through your file system
 
 ```
 pwd #find out what directory you are in
@@ -50,7 +51,7 @@ ls *.txt #search files matching a specific pattern
 cd #explore the change directory command
 ```
 
-**Test your understanding**
+<span style="color:red">**Test your understanding**</span> 
 
 from the current location, navigate to the root location for linux users or desktop folder for windows users. list the files using the following arguments:
 - use a long listing format
@@ -59,7 +60,7 @@ from the current location, navigate to the root location for linux users or desk
 *hint: use the man -ls to get the list of allowed arguments*
 
 
-## Interacting with Files
+## <span style="color:blue">Section 3</span>: Interacting with Files
 
 ##### Reading files
 
@@ -68,11 +69,11 @@ mkdir IntroShell-Text #create a new directory to engage with text files
 cd IntroShell-Tex #or simply cd.. or cd IntroS with then hit tab to auto-complete
 wget http://www.gutenberg.org/files/2600/2600-0.txt 
 ls -lh #to check if the file is available
+mv 2600-0.txt pg2600-0.txt #rename the file
 code pg2600-0.txt #open the file using the program Visual Studio Code
 cat pg2600-0.txt #read the file within the command line environment
 head pg2600-0.txt #read the head of the file
 tail pg2600-0.txt #read the tail of the file
-mv pg2600-0.txt mytext.txt #rename the file
 ```
 
 ##### Editing files
@@ -91,19 +92,19 @@ wq [Enter]Save and quit.
 x [Enter]Save and quit, same as wq 
 ```
 
-**Test your understanding**
+<span style="color:red">**Test your understanding**</span>  
 
-Extract the text file 2600-0.txt using wget;open the file, change the content "WAR AND PEACE" to "Title: WAR AND PEACE", save and quit using the VIM text editor.
+Extract the text file 2600-0.txt using wget;open the file, change the content "Title: War and Peace" to "Title_main: WAR AND PEACE", save and quit using the VIM text editor.
 
 
-## Perform basic data manipulation tasks such as combining and copying files
+## <span style="color:blue">Section 4</span>: Perform basic data manipulation tasks such as combining and copying files
 
 ##### Combining files
 
 ```
 cp pg2600-0.txt tolstoy.txt #duplicate a file
 cp tolstoy.txt tolstoy2.txt #to combine
-cat tolstoy.txt tolstoy2.txt #to combine files but prints the output within the shell
+cat tolstoy.txt tolstoy2.txt #to combine files but prints the output within the shell, cat is for concatenation
 cat tolstoy.txt tolstoy2.txt > tolstoy-twice.txt #send the output to a newfile
 cat *.txt > everything-together.txt #combining more than two files
 ```
@@ -123,9 +124,9 @@ cp /home/asela/Downloads/tolstoy.txt ./ # command refers to the current director
 
 ##### Deleting files
 
-Basic formats of remove command: rm {file-name}
-                                 rm [options] {file-name}
-                                 rm -f {file-name} # -f is used to remove the file forcefully
+Basic formats of remove command: rm {file-name} 
+                                 rm [options] {file-name} 
+                                 rm -f {file-name} # -f is used to remove the file forcefully 
 ```
 rm /d/thushara/workspace/tolstoy.txt # remove a file
 rm -i /d/thushara/workspace/tolstoy.txt # remove a file with a yes/no prompt: where i stands for inquire
@@ -134,9 +135,14 @@ rm /d/thushara/workspace/*.txt # remove all text (.txt) files in the current dir
 rm -rf /d/thushara/workspace/xyz # remove all files and subdirectories from a directory
 rmdir /d/thushara/workspace/xyz # remove an empty directory 
 
-```                                
+```          
 
-## Bash Scripting
+
+<span style="color:red">**Test your understanding**</span> 
+make a new directory and name it as MYSHELL. move the 2600-0.txt to the new directory you have created.
+check if the file exists. delete the file. 
+
+## <span style="color:blue">Section 5</span>:  Bash Scripting
 
 ```
 cat /etc/shells # see what shells you have installed
@@ -155,13 +161,17 @@ curl wttr.in #weather forecast in your terminal!
 
 ```
 
-
+<span style="color:red">**Test your understanding**</span>  
+create a script and prompt the user to input a name. store the name into a variable. print the name to the console
 
 
 *references*
 
 1. Evolution of shells in Linux https://www.ibm.com/developerworks/linux/library/l-linux-shells/index.html
-2. Bash reference manual https://www.gnu.org/software/bash/manual/bash.html#What-is-Bash_003f
-3. Introduction to the Bash Command line https://programminghistorian.org/en/lessons/intro-to-bash
-4. The vi editor (Visual editor) - A quick reference guide
+2. Introduction to the Bash Command line https://programminghistorian.org/en/lessons/intro-to-bash
+3. GNU Coreutils
+https://www.gnu.org/software/coreutils/manual/coreutils.html#toc-Introduction-1
+4. Bash reference manual https://www.gnu.org/software/bash/manual/bash.html#What-is-Bash_003f
+5. The vi editor (Visual editor) - A quick reference guide
 https://ss64.com/vi.html
+
