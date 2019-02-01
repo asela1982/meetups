@@ -138,7 +138,7 @@ rmdir /d/thushara/workspace/xyz # remove an empty directory
 ```          
 
 
-<span style="color:red">**Test your understanding**</span> 
+<span style="color:red">**Test your understanding**</span>  
 make a new directory and name it as MYSHELL. move the 2600-0.txt to the new directory you have created.
 check if the file exists. delete the file. 
 
