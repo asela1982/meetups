@@ -76,6 +76,11 @@ head pg2600-0.txt #read the head of the file
 tail pg2600-0.txt #read the tail of the file
 ```
 
+Understanding the various components of a ls -al command
+
+![](images/ls-al.png)
+
+
 ##### Editing files
 
 Vim is a powerful text editor; it has a steep learning curve
@@ -111,7 +116,8 @@ cat *.txt > everything-together.txt #combining more than two files
 
 ##### Coping and Moving files
 
-basic format of the copy command: cp [source] [destination]  
+basic format of the copy command: cp [source] [destination] 
+
 if you dont want to leave a copy behind, replace cp with mv
 
 
@@ -137,7 +143,6 @@ rmdir /d/thushara/workspace/xyz # remove an empty directory
 
 ```          
 
-
 <span style="color:red">**Test your understanding**</span>  
 make a new directory and name it as MYSHELL. move the 2600-0.txt to the new directory you have created.
 check if the file exists. delete the file. 
@@ -161,12 +166,23 @@ curl wttr.in #weather forecast in your terminal!
 
 ```
 
+Granting permissions using the chmod command:
+![](images/chmod.png)
+
+
+**why do you need to put #!/bin/bash at the beginning of a script file**?
+- called "hash-bang", "she-bang" or "sha-bang"
+- should be followed by a file path of an interpreter(tells what program to use it to run it)
+- if not specified, the default interpreter will be invoked(echo $SHELL outputs the path to the default interpreter)
+- used as a convention
+- used for portability
+
+
 <span style="color:red">**Test your understanding**</span>  
 create a script and prompt the user to input a name. store the name into a variable. print the name to the console
 
 
 *references*
-
 1. Evolution of shells in Linux https://www.ibm.com/developerworks/linux/library/l-linux-shells/index.html
 2. Introduction to the Bash Command line https://programminghistorian.org/en/lessons/intro-to-bash
 3. GNU Coreutils
@@ -174,4 +190,10 @@ https://www.gnu.org/software/coreutils/manual/coreutils.html#toc-Introduction-1
 4. Bash reference manual https://www.gnu.org/software/bash/manual/bash.html#What-is-Bash_003f
 5. The vi editor (Visual editor) - A quick reference guide
 https://ss64.com/vi.html
-
+6. ls -la output screen capture - http://sapbasisnetweaverguide.blogspot.com/2016/03/some-simple-unix-commands-used-for-sap.html
+7. granting permssions using chmod - 
+https://blog.perlubantuan.com/chmod-file-permissions-code/
+8. ‘wget’ is not recognized as an internal or external command – Windows Fix
+https://w3guy.com/wget-recognized-internal-external-command-windows-fix/
+9. adding a directory to PATH Environment variable in Windows
+https://stackoverflow.com/questions/9546324/adding-directory-to-path-environment-variable-in-windows
