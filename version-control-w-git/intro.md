@@ -1,5 +1,5 @@
 
-##### What is Version control
+## What is Version control
 
 a **system** that records changes to a file or a set of files over time so you can recall specific versions later. 
 
@@ -14,9 +14,9 @@ a version control system(VCS) allows you to:
 - highly useful if you are into software development(source code), or simply if you work with files(spreadsheets, word docs, photoshop images etc)
 
 
-##### types of version control systems
+## types of version control systems
 
-1. People's choice of version-control
+##### 1. People's choice of version-control
 
 Copy files into other directories (perhaps a time-stamped directory, if they're clever)
 
@@ -25,7 +25,7 @@ Copy files into other directories (perhaps a time-stamped directory, if they're 
 *   difficult to keep a track of what changes were done
 *   high overhead(a mess with many files)
 
-2. Local VCS
+##### 2. Local VCS
 
 has a simple database of patch sets(that is, the differences between files) in a special format on disk; it can then re-create what any file looked like at any point in time by adding up all the patches. 
 
@@ -47,27 +47,31 @@ rcsdiff helloworld.sh #This will compare the version of the file in your working
 rlog -b helloworld.sh #To view file info
 ```
 
-
-
-
-2. Centralized VCS
-
 - In RCS, the client needed to always checkout files with a lock if you want to make changes to them.
 
 - RCS is working completely locally. Thus if you want to work on the same files with a team these files must be located on some shared disk or on some common server. 
 
+##### 3. Centralized VCS
 
 ![](images/centralizedVCS.png)
 
-a singer server that contains all the versioned files and a number of clients that checkout files from the central place concurrently. 
+- a system where a singer server that contains all the versioned files and a number of clients that checkout files from the central place concurrently. 
 
+- server downtime issues where users are not able to collaborate nor save versioned changes.
 
+- risk losing absoltely everything - the entire history of the project is stored in a single location/database except whatever the single snapshots people happen to have on their local machines - applies to LVCS too!
 
+apache subversion - https://subversion.apache.org/
 
+##### 4. Distributed VCS
 
-3. Distributed VCS
+![](images/distributedVCS.png)
 
+- clients fully mirror the repository, including its full history(cloning)
 
+- if the server dies, any of the client repositories can be copied back up to the server to restore it
+
+Git - https://git-scm.com/
 
 *references*
 
